@@ -1,6 +1,6 @@
 <p align="center">
-	<a href="https://i.ibb.co/4P3DXzb/URL.png">
-		<img src="https://i.ibb.co/4P3DXzb/URL.png" width="400" alt="use-url">
+	<a href="https://i.ibb.co/kcpWdj0/EY.png">
+		<img src="https://i.ibb.co/kcpWdj0/EY.png" width="330" alt="urley">
 	</a>
 </p>
 
@@ -11,25 +11,25 @@
 
 ## ⚡️About
 
-[Use-Url](https://github.com/adenekan41/use-url), A powerful utility library
+[Urley](https://github.com/adenekan41/urley), A powerful utility library
 delivering modularity to work with URL's the right way .**the bes was to work
 with URL's**.
 
-**Using use-url** in **project** provides an **easy way** of **handeling
-/working URL** with only a few imports.
+**Using urley** in **project** provides an **easy way** of **handeling /working
+URL** with only a few imports.
 
-## 🛠 Installing [use-url](https://github.com/adenekan41/use-url)
+## 🛠 Installing [urley](https://github.com/adenekan41/urley)
 
 ### Using NPM
 
 ```bash
-npm i use-url
+npm i urley
 ```
 
 ### Using Yarn
 
 ```bash
-yarn add use-url
+yarn add urley
 ```
 
 ## 📁 Helper Function
@@ -41,15 +41,14 @@ yarn add use-url
 - `isAbsolute` - Returns `Boolean` if the given string is an absolute URL.
   https://seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/
   see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/isAbsolute.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/isAbsolute.js)
 
 ### Is Browser
 
 > returns - Boolean
 
 - `isAbsolute` -Determines if the current runtime environment is a browser. see
-  file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/isBrowser.js)
+  file [here](https://github.com/adenekan41/urley/blob/master/src/isBrowser.js)
 
 ### Get Base URL
 
@@ -58,7 +57,7 @@ yarn add use-url
 > returns - String
 
 - `getBaseUrl` - Returns the current URL without any parameters. see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/getBaseUrl.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/getBaseUrl.js)
 
 ### Decode URL
 
@@ -68,7 +67,7 @@ yarn add use-url
 
 - `decodeUrl` - Function decodes a Uniform Resource Identifier (URI) component
   previously created by decodeURIComponent or by a similar routine. see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/decodeUrl.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/decodeUrl.js)
 
 ### Encode URL
 
@@ -78,7 +77,7 @@ yarn add use-url
 
 - `encodeUrl` - Function encodes a Uniform Resource Identifier (URI) component
   previously created by encodeURIComponent or by a similar routine. see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/encodeUrl.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/encodeUrl.js)
 
 ### Get URL Parameters
 
@@ -88,7 +87,7 @@ yarn add use-url
 
 - `getUrlParameters` - Returns an object containing the parameters of the
   current URL. see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/getUrlParams.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/getUrlParams.js)
 
 ### Get Path Name
 
@@ -97,7 +96,7 @@ yarn add use-url
 > returns - String
 
 - `getPathname` - returns pathname with a regex exec function see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/getPathName.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/getPathName.js)
 
 ### Path Name To Object
 
@@ -106,7 +105,7 @@ yarn add use-url
 > returns - Object
 
 - `getPathnameToObject` - returns pathname into ann object see file
-  [here](https://github.com/adenekan41/use-url/blob/master/src/getPathnameToObject.js)
+  [here](https://github.com/adenekan41/urley/blob/master/src/getPathnameToObject.js)
 
 ## Usage
 
@@ -115,19 +114,19 @@ Getting familiar with the libary and you want to use some helper functions like
 easily just export them the following ways.
 
 ```js
-import { isAbsolute } from 'use-url';
+import { isAbsolute } from 'urley';
 ```
 
 All methods are exported as a flat namesapce so you can also call them like this
 
 ```js
-import isAbsolute from 'use-url/bundle-es/getBaseUrl';
+import isAbsolute from 'urley/bundle-es/getBaseUrl';
 ```
 
 or
 
 ```js
-var isAbsolute = require('use-url');
+var isAbsolute = require('urley');
 ```
 
 and then we have the exported helpers and can already do this
