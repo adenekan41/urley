@@ -4,4 +4,11 @@
  * Released under the MIT License.
  */
 
-export { default as getBaseURL } from './src/getBaseURL';
+export { default as getBaseUrl } from './src/getBaseUrl';
+export { default as decodeUrl } from './src/decodeUrl';
+export { default as encodeUrl } from './src/encodeUrl';
+export { default as getUrlPrameters } from './src/getUrlParams';
+export { default as getPathnameToObject } from './src/pathnameToObject';
+
+export { default as isAbsolute } from './src/isAbsolute';
+export { default as isBrowser } from './src/isBrowser';
