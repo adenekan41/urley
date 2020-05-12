@@ -83,7 +83,7 @@ isAbsolute('https://google.com');
 
 > returns - Boolean
 
-- `isAbsolute` -Determines if the current runtime environment is a browser. see
+- `isBrowser` -Determines if the current runtime environment is a browser. see
   file [here](https://github.com/adenekan41/urley/blob/master/src/isBrowser.js)
 
 ### Get Base URL
