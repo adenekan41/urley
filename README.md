@@ -10,6 +10,16 @@
 <hr / >
 <br />
 
+DEMO
+
+<iframe
+      src="https://codesandbox.io/embed/red-tdd-q45p3?fontsize=13&hidenavigation=1&theme=dark&view=preview"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="red-tdd-q45p3"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
+
 [![npm](https://badge.fury.io/js/urley.svg)](https://www.npmjs.com/package/urley)
 
 [![NPM](https://nodei.co/npm/urley.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/urley/)
@@ -19,11 +29,11 @@
 ## ⚡️About
 
 [Urley](https://github.com/adenekan41/urley), A powerful utility library
-delivering modularity to work with URL's the right way .**the bes was to work
+delivering modularity to work with URL's the right way .**the best was to work
 with URL's**.
 
-**Using urley** in **project** provides an **easy way** of **handeling /working
-URL** with only a few imports.
+**Using urley** in **project** provides an **easy way** of handeling URL with
+only a few imports.
 
 ## 📲 Installing [urley](https://github.com/adenekan41/urley)
 
@@ -52,7 +62,7 @@ import { isAbsolute } from 'urley';
 All methods are exported as a flat namesapce so you can also call them like this
 
 ```js
-import isAbsolute from 'urley/bundle-es/getBaseUrl';
+import isAbsolute from 'urley/bundle-es/isAbsolute';
 ```
 
 or
@@ -83,7 +93,7 @@ isAbsolute('https://google.com');
 
 > returns - Boolean
 
-- `isBrowser` -Determines if the current runtime environment is a browser. see
+- `isBrowser` - Determines if the current runtime environment is a browser. see
   file [here](https://github.com/adenekan41/urley/blob/master/src/isBrowser.js)
 
 ### Get Base URL
