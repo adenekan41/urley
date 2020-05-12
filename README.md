@@ -10,21 +10,13 @@
 <hr / >
 <br />
 
-DEMO
-
-<iframe
-      src="https://codesandbox.io/embed/red-tdd-q45p3?fontsize=13&hidenavigation=1&theme=dark&view=preview"
-     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="red-tdd-q45p3"
-     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr"
-     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
-   ></iframe>
-
 [![npm](https://badge.fury.io/js/urley.svg)](https://www.npmjs.com/package/urley)
 
 [![NPM](https://nodei.co/npm/urley.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/urley/)
 
 <br />
+
+### 🔍 [Try out the interactive Demo](https://codesandbox.io/embed/red-tdd-q45p3?fontsize=13&hidenavigation=1&theme=dark) on codesandbox
 
 ## ⚡️About
 
