@@ -49,7 +49,7 @@ export const getWindowHostName = url => {
 };
 
 /**
- * Get Window Host Name
+ * Get Window Hash
  * @typedef {getWindowHash} getWindowHash
  * @function
  * @param {(string | null)} url
@@ -64,7 +64,7 @@ export const getWindowHash = url => {
 };
 
 /**
- * Get Window Host Name
+ * Get Window href
  * @typedef {getWindowHref} getWindowHref
  * @function
  * @param {(string | null)} url
@@ -79,7 +79,7 @@ export const getWindowHref = url => {
 };
 
 /**
- * Get Window Host Name
+ * Get Window Port
  * @typedef {getWindowPort} getWindowPort
  * @function
  * @param {(string | null)} url
@@ -94,7 +94,7 @@ export const getWindowPort = url => {
 };
 
 /**
- * Get Window Host Name
+ * Get Window Protocol
  * @typedef {getWindowProtocol} getWindowProtocol
  * @function
  * @param {(string | null)} url
@@ -109,7 +109,7 @@ export const getWindowProtocol = url => {
 };
 
 /**
- * Get Window Host Name
+ * Get Window Search Params
  * @typedef {getWindowSearch} getWindowSearch
  * @function
  * @param {(string | null)} url
@@ -118,7 +118,7 @@ export const getWindowProtocol = url => {
 export const getWindowSearch = url => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
-		return newUrl.protocol;
+		return newUrl.search;
 	}
 	return isBrowser() && window.location.search;
 };

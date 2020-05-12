@@ -1,3 +1,4 @@
+<br />
 <p align="center">
 	<a href="https://i.ibb.co/kcpWdj0/EY.png">
 		<img src="https://i.ibb.co/kcpWdj0/EY.png" width="330" alt="urley">
@@ -24,7 +25,7 @@ with URL's**.
 **Using urley** in **project** provides an **easy way** of **handeling /working
 URL** with only a few imports.
 
-## 🛠 Installing [urley](https://github.com/adenekan41/urley)
+## 📲 Installing [urley](https://github.com/adenekan41/urley)
 
 ### Using NPM
 
@@ -36,6 +37,35 @@ npm i urley
 
 ```bash
 yarn add urley
+```
+
+## 🛠 Usage
+
+Getting familiar with the libary and you want to use some helper functions like
+`getBaseUrl`, `getPathnameToObject`, `isAbsoluteUrl` helpers and e.t.c you can
+easily just export them the following ways.
+
+```js
+import { isAbsolute } from 'urley';
+```
+
+All methods are exported as a flat namesapce so you can also call them like this
+
+```js
+import isAbsolute from 'urley/bundle-es/getBaseUrl';
+```
+
+or
+
+```js
+var isAbsolute = require('urley');
+```
+
+and then we have the exported helpers and can already do this
+
+```js
+isAbsolute('https://google.com');
+// => true
 ```
 
 ## 📁 Helper Function
@@ -113,35 +143,43 @@ yarn add urley
 - `getPathnameToObject` - returns pathname into ann object see file
   [here](https://github.com/adenekan41/urley/blob/master/src/getPathnameToObject.js)
 
-## Usage
+### Window Portion
 
-Getting familiar with the libary and you want to use some helper functions like
-`getBaseUrl`, `getPathnameToObject`, `isAbsoluteUrl` helpers and e.t.c you can
-easily just export them the following ways.
+> parameters - url (String)
 
-```js
-import { isAbsolute } from 'urley';
-```
+> returns - string
 
-All methods are exported as a flat namesapce so you can also call them like this
+- `getWindowPathname` - Return pathname if parameter is passed or uses the one
+  in the current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-```js
-import isAbsolute from 'urley/bundle-es/getBaseUrl';
-```
+- `getWindowHost` - Return host if parameter is passed or uses the one in the
+  current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-or
+- `getWindowHostName` - Return hostname if parameter is passed or uses the one
+  in the current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-```js
-var isAbsolute = require('urley');
-```
+- `getWindowHash` - Return hash if parameter is passed or uses the one in the
+  current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-and then we have the exported helpers and can already do this
+- `getWindowHref` - Return href if parameter is passed or uses the one in the
+  current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-```js
-isAbsolute({});
-// => true
-```
+- `getWindowPort` - Return port if parameter is passed or uses the one in the
+  current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
-> MIT © [codewonders.dev](https://codewonders.dev) &nbsp;&middot;&nbsp; GitHub
-> [@adenekan41 / @codewonders](https://github.com/adenekan41) >
-> &nbsp;&middot;&nbsp;
+- `getWindowProtocol` - Return protocol if parameter is passed or uses the one
+  in the current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
+
+- `getWindowSearch` - Return search if parameter is passed or uses the one in
+  the current window environment see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
+
+MIT © [codewonders.dev](https://codewonders.dev) &nbsp;&middot;&nbsp; GitHub
+[@adenekan41](https://github.com/adenekan41) > &nbsp;&middot;&nbsp;
