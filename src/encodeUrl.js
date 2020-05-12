@@ -1,7 +1,10 @@
 /**
+ * EncodeURL definition
+ * @typedef {EncodeUrl} EncodeUrl
  * @function
  * @param {String} str
- * @returns {String}
+ * @property {String} encodeURIComponent
+ * @returns {String} EncodeUrl
  */
 
 // get string to encode and verify that its a type of string

@@ -1,10 +1,13 @@
 /**
+ * decodeURL definition
+ * @typedef {decodeUrl} decodeUrl
  * @function
  * @param {String} str
- * @returns {String}
+ * @property {String} decodeURIComponent
+ * @returns {String} decodeUrl
  */
 
-// get string to encode and verify that its a type of string
+// get string to decode and verify that its a type of string
 // function to strictly comply with https://tools.ietf.org/html/rfc3986
 const decodeUrl = (str = '') =>
 	str &&

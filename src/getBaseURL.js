@@ -1,8 +1,11 @@
 import isBrowser from './isBrowser';
 
 /**
+ * getBaseUrl definition
+ * @typedef {getBaseUrl} getBaseUrl
  * @function
  * @param {String} url
+ * @property {String}
  * @returns {String}
  */
 
