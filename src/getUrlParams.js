@@ -6,7 +6,7 @@ import isBrowser from './isBrowser';
  * @function
  * @param {String} url
  * @property {String}
- * @returns {String}
+ * @returns {Object}
  */
 
 // Returns the current URL

@@ -7,7 +7,7 @@ import getPathname from './getPathName';
  * @function
  * @param {String} url
  * @property {String} getPathname
- * @returns {String}
+ * @returns {Object}
  */
 
 // Returns the current URL
