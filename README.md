@@ -5,9 +5,15 @@
 </p>
 
 <p align="center"> A powerful utility library to work with URL's</p>
-<hr / >
 
-<br /><br />
+<hr / >
+<br />
+
+[![npm](https://badge.fury.io/js/urley.svg)](https://www.npmjs.com/package/urley)
+
+[![NPM](https://nodei.co/npm/urley.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/urley/)
+
+<br />
 
 ## ⚡️About
 
