@@ -1,43 +1,43 @@
 {
-  "name": "use-url",
-  "version": "1.0.0",
-  "description": "Powerful utility function to work with URL's",
-  "private": true,
-  "repository": "git://github.com/adenekan41/use-url.git",
-  "license": "MIT",
-  "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
-  "main": "bundle-cjs/index.js",
-  "module": "bundle-es/index.js",
-  "jsnext:main": "bundle-es/index.js",
-  "scripts": {
-    "flush": "rm -rf bundle-cjs && rm -rf bundle-es",
-    "build": "yarn flush && rollup -c",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\""
-  },
-  "devDependencies": {
-    "rollup": "^1.10.0",
-    "rollup-plugin-commonjs": "^9.3.4",
-    "rollup-plugin-multi-input": "^1.0.3",
-    "rollup-plugin-node-resolve": "^4.2.3",
-    "rollup-plugin-terser": "^5.2.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
-  "files": [
-    "bundle-es",
-    "bundle-cjs"
-  ],
-  "keywords": [
-    "web url",
-    "javascript",
-    "codewonders",
-    "js",
-    "utility",
-    "functions",
-    "utilities",
-    "helpers",
-    "helper functions",
-    "URL"
-  ]
+	"name": "use-url",
+	"version": "1.0.0",
+	"description": "Powerful utility function to work with URL's",
+	"private": true,
+	"repository": "git://github.com/adenekan41/use-url.git",
+	"license": "MIT",
+	"author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",
+	"main": "bundle-cjs/index.js",
+	"module": "bundle-es/index.js",
+	"jsnext:main": "bundle-es/index.js",
+	"scripts": {
+		"flush": "rm -rf bundle-cjs && rm -rf bundle-es",
+		"build": "yarn flush && rollup -c",
+		"format": "prettier --write \"**/*.{js,jsx,json,md}\""
+	},
+	"devDependencies": {
+		"rollup": "^1.10.0",
+		"rollup-plugin-commonjs": "^9.3.4",
+		"rollup-plugin-multi-input": "^1.0.3",
+		"rollup-plugin-node-resolve": "^4.2.3",
+		"rollup-plugin-terser": "^5.2.0"
+	},
+	"publishConfig": {
+		"registry": "https://npm.pkg.github.com/"
+	},
+	"files": [
+		"bundle-es",
+		"bundle-cjs"
+	],
+	"keywords": [
+		"web url",
+		"javascript",
+		"codewonders",
+		"js",
+		"utility",
+		"functions",
+		"utilities",
+		"helpers",
+		"helper functions",
+		"URL"
+	]
 }
