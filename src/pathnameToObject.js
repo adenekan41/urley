@@ -1,5 +1,6 @@
 import isBrowser from './isBrowser';
 import getPathname from './getPathName';
+import getBaseUrl from './getBaseUrl';
 
 /**
  * getPathnameToObject definition
@@ -16,13 +17,14 @@ const getPathnameToObject = (url = isBrowser() && window.location.href) => {
 	// set the new URL
 	let newUrl;
 	// check if the current runtime environment supports URL https://developer.mozilla.org/en-US/docs/Web/API/URL
-	if (typeof URL != 'undefined') {
+	if (typeof URL === 'undefined') {
 		newUrl = new URL(url).pathname.slice(1);
 	} else {
 		// if the current runtime environment doesnt support URL we then split and get the pathname values
-		newUrl = getPathname(url).slice(1);
+		newUrl = getPathname(getBaseUrl(url)).slice(1);
 	}
 	return newUrl.split('/').reduce((acc, a, i) => ({ ...acc, [i]: a }), {});
 };
 
 export default getPathnameToObject;
+console.log('sdsds');

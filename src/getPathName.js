@@ -9,7 +9,8 @@ import isBrowser from './isBrowser';
  * @returns {String}
  */
 
-// Returns the current URL
+// Returns the current URL from the param
+// sets default parameter as the window current location
 const getPathname = (url = isBrowser() && window.location.href) =>
 	new RegExp(/.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/).exec(url)[1];
 
