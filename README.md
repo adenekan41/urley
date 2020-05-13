@@ -1,7 +1,7 @@
 <br />
 <p align="center">
 	<a href="https://i.ibb.co/kcpWdj0/EY.png">
-		<img src="https://i.ibb.co/kcpWdj0/EY.png" width="330" alt="urley">
+		<img src="https://i.ibb.co/kcpWdj0/EY.png" width="290" alt="urley">
 	</a>
 </p>
 
@@ -21,8 +21,8 @@
 ## ⚡️About
 
 [Urley](https://github.com/adenekan41/urley), A powerful utility library
-delivering modularity to work with URL's the right way .**the best was to work
-with URL's**.
+delivering modularity to work with URL's the right way. Presenting the best way
+to work with URL's.
 
 **Using urley** in **project** provides an **easy way** of handeling URL with
 only a few imports.
@@ -45,7 +45,7 @@ yarn add urley
 
 Getting familiar with the libary and you want to use some helper functions like
 `getBaseUrl`, `getPathnameToObject`, `isAbsoluteUrl` helpers and e.t.c you can
-easily just export them the following ways.
+easily just import them the following ways.
 
 ```js
 import { isAbsolute } from 'urley';
@@ -70,7 +70,7 @@ isAbsolute('https://google.com');
 // => true
 ```
 
-## 📁 Helper Function
+## 📁 Documentation [View Here](https://urley.netlify.com)
 
 ### Is Absolute
 
@@ -152,35 +152,35 @@ isAbsolute('https://google.com');
 > returns - string
 
 - `getWindowPathname` - Return pathname if parameter is passed or uses the one
-  in the current window environment see file
+  in the current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowHost` - Return host if parameter is passed or uses the one in the
-  current window environment see file
+  current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowHostName` - Return hostname if parameter is passed or uses the one
-  in the current window environment see file
+  in the current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowHash` - Return hash if parameter is passed or uses the one in the
-  current window environment see file
+  current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowHref` - Return href if parameter is passed or uses the one in the
-  current window environment see file
+  current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowPort` - Return port if parameter is passed or uses the one in the
-  current window environment see file
+  current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowProtocol` - Return protocol if parameter is passed or uses the one
-  in the current window environment see file
+  in the current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 - `getWindowSearch` - Return search if parameter is passed or uses the one in
-  the current window environment see file
+  the current window environment. see file
   [here](https://github.com/adenekan41/urley/blob/master/src/windowPortion.js)
 
 MIT © [codewonders.dev](https://codewonders.dev) &nbsp;&middot;&nbsp; GitHub
