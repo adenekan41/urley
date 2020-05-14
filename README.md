@@ -5,7 +5,7 @@
 	</a>
 </p>
 
-<p align="center"> A powerful utility library to work with URL's</p>
+<p align="center"> A powerful utility library to work with URLs</p>
 
 <hr / >
 <br />
@@ -21,8 +21,8 @@
 ## ⚡️About
 
 [Urley](https://github.com/adenekan41/urley), A powerful utility library
-delivering modularity to work with URL's the right way. Presenting the best way
-to work with URL's.
+delivering modularity to work with URLs the right way. Presenting the best way
+to work with URLs.
 
 **Using urley** in **project** provides an **easy way** of handeling URL with
 only a few imports.
