@@ -5,7 +5,7 @@
 	</a>
 </p>
 
-<p align="center"> A powerful utility library to work with URLs</p>
+<p align="center">A cross-platform library with a collection of handy utilites to work with URLs</p>
 
 <hr / >
 <br />
@@ -20,14 +20,19 @@
 
 ## ⚡️About
 
-[Urley](https://github.com/adenekan41/urley), A powerful utility library
-delivering modularity to work with URLs the right way. Presenting the best way
-to work with URLs.
+[Urley](https://github.com/adenekan41/urley), A cross-platform utility library
+to work with URLs. Urely has a **collection of handy helpers** to use when
+working with URLs, with just a few imports you are set.
 
-**Using urley** in **project** provides an **easy way** of handeling URL with
-only a few imports.
+## ✨ Features
 
-## 📲 Installing [urley](https://github.com/adenekan41/urley)
+- 📦 Light Weight ~885b (gzipped)
+- 🔧 Cross platform supported
+- 🙅‍♂️ Zero dependencies
+- ✅ Fully tested and reliable
+- ⚒ CommonJS, ESM & browser standalone support
+
+## ⬇ Installing [urley](https://github.com/adenekan41/urley)
 
 ### Using NPM
 
@@ -44,7 +49,7 @@ yarn add urley
 ## 🛠 Usage
 
 Getting familiar with the libary and you want to use some helper functions like
-`getBaseUrl`, `getPathnameToObject`, `isAbsoluteUrl` helpers and e.t.c you can
+`getBaseUrl`, `getPathnameToObject`, `isAbsoluteUrl` helpers e.t.c you can
 easily just import them the following ways.
 
 ```js
@@ -133,7 +138,7 @@ isAbsolute('https://google.com');
 
 > returns - String
 
-- `getPathname` - returns pathname with a regex exec function see file
+- `getPathname` - Returns pathname with a regex exec function see file
   [here](https://github.com/adenekan41/urley/blob/master/src/getPathName.js)
 
 ### Path Name To Object
@@ -142,7 +147,7 @@ isAbsolute('https://google.com');
 
 > returns - Object
 
-- `getPathnameToObject` - returns pathname into ann object see file
+- `pathnameToObject` - Returns pathname into an object see file
   [here](https://github.com/adenekan41/urley/blob/master/src/getPathnameToObject.js)
 
 ### Window Portion

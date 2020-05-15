@@ -1,7 +1,7 @@
 {
   "name": "urley",
   "version": "1.0.0",
-  "description": "Powerful utility function to work with URLs",
+  "description": "A cross-platform library with a collection of handy utilites to work with URLs",
   "repository": "git://github.com/adenekan41/urley.git",
   "license": "MIT",
   "author": "Adenekan Wonderful <hellocodewonders@gmail.com> (https://codewonders.dev)",

@@ -2,21 +2,19 @@ import isBrowser from './isBrowser';
 
 /**
  * getBaseUrl definition
- * @typedef {getBaseUrl} getBaseUrl
- * @function
+ * Returns the current URL without any parameters.
+ * sets default parameter as the window current location
  * @param {String} url
- * @property {String}
  * @returns {String}
  */
 
-// Returns the current URL without any parameters.
-// sets default parameter as the window current location
-
 const getBaseUrl = (url = isBrowser() && window.location.href) => {
 	// try to check if url is passed
-	return url && typeof url === 'string' && url.indexOf('?') > 0
-		? url.slice(0, url.indexOf('?'))
-		: url;
+	if (typeof url === 'string') return;
+	if (url.indexOf('?') > 0) {
+		return url.slice(0, url.indexOf('?'));
+	}
+	return url;
 };
 
 export default getBaseUrl;

@@ -3,17 +3,14 @@ import getPathname from './getPathName';
 import getBaseUrl from './getBaseUrl';
 
 /**
- * getPathnameToObject definition
- * @typedef {getPathnameToObject} getPathnameToObject
- * @function
- * @param {String} url
- * @property {String} getPathname
+ * pathnameToObject definition
+ * returns the current URL
+ * sets default parameter as the window current location
+ * @param {(String | null)} url
  * @returns {Object}
  */
 
-// Returns the current URL
-// sets default parameter as the window current location
-const getPathnameToObject = (url = isBrowser() && window.location.href) => {
+const pathnameToObject = (url = isBrowser() && window.location.href) => {
 	// set the new URL
 	let newUrl;
 	// check if the current runtime environment supports URL https://developer.mozilla.org/en-US/docs/Web/API/URL
@@ -26,5 +23,4 @@ const getPathnameToObject = (url = isBrowser() && window.location.href) => {
 	return newUrl.split('/').reduce((acc, a, i) => ({ ...acc, [i]: a }), {});
 };
 
-export default getPathnameToObject;
-console.log('sdsds');
+export default pathnameToObject;

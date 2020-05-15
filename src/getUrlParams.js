@@ -2,15 +2,12 @@ import isBrowser from './isBrowser';
 
 /**
  * getUrlParameters definition
- * @typedef {getUrlParameters} getUrlParameters
- * @function
- * @param {String} url
- * @property {String}
+ * Returns the current URL
+ * sets default parameter as the window current location
+ * @param {(String | null)} url
  * @returns {Object}
  */
 
-// Returns the current URL
-// sets default parameter as the window current location
 const getUrlParameters = (url = isBrowser() && window.location.href) => {
 	// RegExp pattern from https://stackoverflow.com/a/10687137
 	return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(

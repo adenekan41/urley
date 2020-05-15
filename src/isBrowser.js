@@ -1,9 +1,9 @@
 /**
- * @function
+ * isBrowser Definition
+ * Determines if the current runtime environment is a browser
  * @returns {Boolean}
  */
 
-// Determines if the current runtime environment is a browser
 const isBrowser = () => {
 	if (![typeof window, typeof document].includes('undefined')) {
 		return true;

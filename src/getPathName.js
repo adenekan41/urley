@@ -2,15 +2,12 @@ import isBrowser from './isBrowser';
 
 /**
  * getPathName definition
- * @typedef {getPathname} getPathname
- * @function
- * @param {String} url
- * @property {String}
+ * Returns the current URL from the param
+ * sets default parameter as the window current location
+ * @param {(String | null)} url
  * @returns {String}
  */
 
-// Returns the current URL from the param
-// sets default parameter as the window current location
 const getPathname = (url = isBrowser() && window.location.href) =>
 	new RegExp(/.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/).exec(url)[1];
 
