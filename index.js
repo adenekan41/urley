@@ -11,7 +11,7 @@ export { default as decodeUrl } from './src/decodeUrl';
 export { default as encodeUrl } from './src/encodeUrl';
 export { default as getPathname } from './src/getPathName';
 export { default as getUrlParameters } from './src/getUrlParams';
-export { default as getPathnameToObject } from './src/pathnameToObject';
+export { default as pathnameToObject } from './src/pathnameToObject';
 
 export { default as isAbsolute } from './src/isAbsolute';
 export { default as isBrowser } from './src/isBrowser';
