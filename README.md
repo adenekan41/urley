@@ -150,6 +150,16 @@ isAbsolute('https://google.com');
 - `pathnameToObject` - Returns pathname into an object see file
   [here](https://github.com/adenekan41/urley/blob/master/src/getPathnameToObject.js)
 
+### Join URL
+
+> parameters - urls (String)
+
+> returns - String
+
+- `joinUrl` - Join all given URL segments together, then normalizes the
+  resulting URL see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/joinUrl.js)
+
 ### Window Portion
 
 > parameters - url (String)
