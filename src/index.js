@@ -1,9 +1,11 @@
-/*!
- * urley v1.0.1
+/**
+ * urley v1.2.1
+ * @author Adenekan Wonderful <hellocodewonders@gmail.com>
  * (c) 2020-present Adenekan Wonderful
+ * @file Manages the configuration settings and default exports
+ * @version 1.2.0
  * Released under the MIT License.
  */
-
 export * from './windowPortion';
 
 export { default as getBaseUrl } from './getBaseUrl';
