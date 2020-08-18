@@ -93,6 +93,13 @@ isAbsolute('https://google.com');
 - `isBrowser` - Determines if the current runtime environment is a browser. see
   file [here](https://github.com/adenekan41/urley/blob/master/src/isBrowser.js)
 
+### Is Valid URL
+
+> returns - Boolean
+
+- `isValidUrl` - Returns `Boolean` if the given string/URL is valid. see file
+  [here](https://github.com/adenekan41/urley/blob/master/src/isValidUrl.js)
+
 ### Get Base URL
 
 > parameters - url (String)

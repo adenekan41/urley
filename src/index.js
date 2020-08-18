@@ -18,3 +18,4 @@ export { default as joinUrl } from './joinUrl';
 
 export { default as isAbsolute } from './isAbsolute';
 export { default as isBrowser } from './isBrowser';
+export { default as isValidUrl } from './isValidUrl';
