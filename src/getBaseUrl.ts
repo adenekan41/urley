@@ -5,11 +5,9 @@ import isValidUrl from './isValidURL';
 /**
  * getBaseUrl definition
  * Returns the current URL without any parameters.
- * @param {(String | null)} url
- * @returns {String}
  */
 
-const getBaseUrl = (url = isBrowser() && window.location.href) => {
+const getBaseUrl = (url: string | boolean = isBrowser() && window.location.href): string => {
 	if (!url || url === '') {
 		// Throw new TypeError if user doesnt parses any string.
 		return utilityTypeError('getBaseUrl');

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "lib": ["DOM"],
+    "target": "es5",
+    "rootDir": "src",
+    "pretty": true,
+    "declaration": true,
+    "esModuleInterop": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

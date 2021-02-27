@@ -1,10 +1,11 @@
-import resolve from 'rollup-plugin-node-resolve';
+import resolve from '@rollup/plugin-node-resolve';
+import typescript from 'rollup-plugin-typescript';
 import commonjs from 'rollup-plugin-commonjs';
 import multiInput from 'rollup-plugin-multi-input';
 import { terser } from 'rollup-plugin-terser';
 
 export default {
-	input: ['src/**/*.js'],
+	input: ['src/**/*.ts'],
 	output: [
 		{
 			dir: 'bundle-es',
@@ -26,10 +27,9 @@ export default {
 	],
 	plugins: [
 		multiInput(),
+		typescript(),
 		resolve({
-			jsnext: true,
-			main: true,
-			browser: true,
+			mainFields: ['jsnext:main', 'module', 'main'],
 		}),
 		commonjs(),
 	],

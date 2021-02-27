@@ -3,11 +3,9 @@ import isBrowser from './isBrowser';
 /**
  * Get Window Pathname
  * return pathname if parameter is passed
- * @param {(string | null)} url
- * @returns {String}
  */
 
-export const getWindowPathname = (url = null) => {
+export const getWindowPathname = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.pathname;
@@ -18,10 +16,8 @@ export const getWindowPathname = (url = null) => {
 /**
  * Get Window Host
  * return host if url parameter is passed
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowHost = (url = null) => {
+export const getWindowHost = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.host;
@@ -31,10 +27,8 @@ export const getWindowHost = (url = null) => {
 
 /**
  * Get Window Host Name
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowHostName = (url = null) => {
+export const getWindowHostName = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.hostname;
@@ -44,10 +38,8 @@ export const getWindowHostName = (url = null) => {
 
 /**
  * Get Window Hash
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowHash = (url = null) => {
+export const getWindowHash = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.hash;
@@ -57,10 +49,8 @@ export const getWindowHash = (url = null) => {
 
 /**
  * Get Window href
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowHref = (url = null) => {
+export const getWindowHref = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.href;
@@ -70,10 +60,8 @@ export const getWindowHref = (url = null) => {
 
 /**
  * Get Window Port
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowPort = (url = null) => {
+export const getWindowPort = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.port;
@@ -83,10 +71,8 @@ export const getWindowPort = (url = null) => {
 
 /**
  * Get Window Protocol
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowProtocol = (url = null) => {
+export const getWindowProtocol = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.protocol;
@@ -96,10 +82,8 @@ export const getWindowProtocol = (url = null) => {
 
 /**
  * Get Window Search Params
- * @param {(string | null)} url
- * @returns {String}
  */
-export const getWindowSearch = (url = null) => {
+export const getWindowSearch = (url: string): Boolean | string => {
 	if (url && typeof url === 'string' && typeof URL != 'undefined') {
 		const newUrl = new URL(url);
 		return newUrl.search;

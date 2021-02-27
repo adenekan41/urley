@@ -1,17 +1,15 @@
 import { syntaxError, utilityTypeError } from './errorDefinitions';
 
 /**
- * decodeURL definition
- * get string to decode and verify that its a type of string
+ * EncodeURL definition
+ * get string to encode and verify that its a type of string
  * function to strictly comply with https://tools.ietf.org/html/rfc3986
- * @param {String} str
- * @returns {String} decodeUrl
  */
 
-const decodeUrl = str => {
+const encodeUrl = (str: string): Function | string => {
 	if (!str || str === '') {
 		// Throw new TypeError if user doesnt parses any string
-		return utilityTypeError('decodeUrl');
+		return utilityTypeError('encodeUrl');
 	}
 
 	if (typeof str !== 'string') {
@@ -19,7 +17,10 @@ const decodeUrl = str => {
 		return syntaxError();
 	}
 
-	return decodeURIComponent(str).replace(/\+/g, '%20');
+	return encodeURIComponent(str).replace(
+		/[!'()*]/g,
+		char => '%' + char.charCodeAt(0).toString(16)
+	);
 };
 
-export default decodeUrl;
+export default encodeUrl;

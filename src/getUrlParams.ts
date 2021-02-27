@@ -3,17 +3,15 @@ import { syntaxError, utilityTypeError, INVALID_URL } from './errorDefinitions';
 import isValidUrl from './isValidURL';
 
 /**
- * getPathName definition
- * Returns the current URL from the param
+ * getUrlParameters definition
+ * Returns the current URL
  * sets default parameter as the window current location
- * @param {(String | null)} url
- * @returns {String}
  */
 
-const getPathname = (url = isBrowser() && window.location.href) => {
+const getUrlParameters = (url: string | boolean = isBrowser() && window.location.href): object  => {
 	if (!url || url === '') {
 		// Throw new TypeError if user doesnt parses any string
-		return utilityTypeError('getPathname');
+		return utilityTypeError('getUrlParameters');
 	}
 
 	if (typeof url !== 'string') {
@@ -26,7 +24,14 @@ const getPathname = (url = isBrowser() && window.location.href) => {
 		INVALID_URL();
 	}
 
-	return new RegExp(/.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/).exec(url)[1];
+	// RegExp pattern from modified (https://stackoverflow.com/a/10687137)
+	return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
+		(acc: object | any, val: string) => (
+			(acc[val.slice(0, val.indexOf('='))] = val.slice(val.indexOf('=') + 1)),
+			acc
+		),
+		{}
+	);
 };
 
-export default getPathname;
+export default getUrlParameters;

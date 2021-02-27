@@ -1,16 +1,14 @@
 import { utilityTypeError, syntaxError } from './errorDefinitions';
 
 /**
- * isAbsoluteURL Definition
+ * isAbsolute Definition
  * Returns Boolean if the given string is an absolute URL. https://seoclarity.net/resources/knowledgebase/difference-relative-absolute-url-15325/
- * @param {String} str
- * @returns {Boolean}
  */
 
-const isAbsoluteURL = str => {
+const isAbsolute = (str: string): Function | boolean => {
 	if (!str || str === '') {
 		// Throw new TypeError if user doesnt parses any string
-		return utilityTypeError('isAbsoluteURL');
+		return utilityTypeError('isAbsolute');
 	}
 
 	if (typeof str !== 'string') {
@@ -21,4 +19,4 @@ const isAbsoluteURL = str => {
 	return new RegExp('^[a-z][a-z0-9+.-]*:').test(str);
 };
 
-export default isAbsoluteURL;
+export default isAbsolute;
