@@ -20,7 +20,7 @@ export default {
 			name: 'bundle',
 			plugins: [
 				terser({
-					exclude: ['src/index.js'],
+					exclude: ['src/index.ts'],
 				}),
 			],
 		},

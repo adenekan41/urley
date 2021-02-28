@@ -19,7 +19,7 @@ const getPathname = (url: string | boolean = isBrowser() && window.location.href
 		return syntaxError();
 	}
 
-	if (isValidUrl(url)) INVALID_URL();
+	if (!isValidUrl(url)) INVALID_URL();
 
   const pathname: string[] | null = new RegExp(/.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/).exec(url) ?? []
 	return pathname[1] ?? '';

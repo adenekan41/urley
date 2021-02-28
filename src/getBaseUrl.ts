@@ -18,10 +18,8 @@ const getBaseUrl = (url: string | boolean = isBrowser() && window.location.href)
 		return syntaxError();
 	}
 
-	if (isValidUrl(url)) {
-		// Checks if the URL is a valid URL, if not returns a warning to the engineer.
-		INVALID_URL();
-	}
+	if (!isValidUrl(url)) INVALID_URL();
+	
 
 	// Check the index of the param in the Url and return the base URL
 	return url.indexOf('?') > 0 ? url.slice(0, url.indexOf('?')) : url;

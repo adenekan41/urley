@@ -19,10 +19,8 @@ const getUrlParameters = (url: string | boolean = isBrowser() && window.location
 		return syntaxError();
 	}
 
-	if (isValidUrl(url)) {
-		// Checks if the URL is a valid URL, if not returns a warning to the engineer.
-		INVALID_URL();
-	}
+	if (!isValidUrl(url)) INVALID_URL();
+	
 
 	// RegExp pattern from modified (https://stackoverflow.com/a/10687137)
 	return (url.match(/([^?=&]+)(=([^&]*))/g) || []).reduce(
