@@ -21,10 +21,8 @@ const pathnameToObject = (url: string | boolean = isBrowser() && window.location
 		return syntaxError();
 	}
 
-	if (isValidUrl(url)) {
-		// Checks if the URL is a valid URL, if not returns a warning to the engineer.
-		INVALID_URL();
-	}
+	if (!isValidUrl(url)) INVALID_URL();
+	
 
 	// set the new URL
 	let newUrl: string;
